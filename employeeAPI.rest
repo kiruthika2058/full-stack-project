@@ -1,0 +1,29 @@
+### Create an Employee
+POST http://localhost:5000/api/employees
+Content-Type: application/json
+
+{
+  "empId": "E001",
+  "name": "Alice Johnson",
+  "position": "Software Engineer",
+  "salary": 80000
+}
+
+### Get All Employees
+GET http://localhost:5000/api/employees
+
+### Get a Single Employee by empId
+GET http://localhost:5000/api/employees/E001
+
+### Update Employee Details
+PUT http://localhost:5000/api/employees/E001
+Content-Type: application/json
+
+{
+  "name": "Alice Johnson",
+  "position": "Senior Software Engineer",
+  "salary": 90000
+}
+
+### Delete an Employee
+DELETE http://localhost:5000/api/employees/E001
